@@ -1,0 +1,9 @@
+.button:hover{-fx-background-color:#666666}
+.Table-row-cell:even{
+    -fx-background-color: #000000;
+    -fx-background-insets:0, 0 0 1 0;
+}
+.Table-row-cell:odd{
+    -fx-background-color:#101010;
+    -fx-background-insets:0, 0 0 1 0;
+}

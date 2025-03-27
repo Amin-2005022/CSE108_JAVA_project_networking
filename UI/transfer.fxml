@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="860.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.mainproject.TransferController">
+   <children>
+      <Label fx:id="label6" alignment="CENTER" layoutX="118.0" layoutY="25.0" prefHeight="39.0" prefWidth="624.0" text="Label" textFill="#c9c9c9">
+         <font>
+            <Font name="Algerian" size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table3" layoutX="70.0" layoutY="88.0" prefHeight="380.0" prefWidth="720.0" style="-fx-background-color: #C0C0C0;">
+         <columns>
+            <TableColumn fx:id="titlecolumn" prefWidth="165.5999755859375" text="Title" />
+            <TableColumn fx:id="yearofreleasecolumn" prefWidth="90.40000915527344" text="Year of Release" />
+            <TableColumn fx:id="genrecolumn" minWidth="0.0" prefWidth="184.0" text="Genre" />
+            <TableColumn fx:id="runningtimecolumn" prefWidth="87.20001220703125" text="Running Time" />
+            <TableColumn fx:id="budgetcolumn" prefWidth="88.800048828125" text="Budget" />
+            <TableColumn fx:id="revenuecolumn" prefWidth="103.20001220703125" text="Revenue" />
+         </columns>
+      </TableView>
+      <Label fx:id="label7" layoutX="70.0" layoutY="499.0" prefHeight="34.0" prefWidth="210.0" text="Transfer to : " textFill="#c9c9c9">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield5" layoutX="260.0" layoutY="491.0" prefHeight="51.0" prefWidth="401.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button layoutX="671.0" layoutY="494.0" mnemonicParsing="false" onAction="#transferClick" prefHeight="43.0" prefWidth="126.0" stylesheets="@Style.css" text="Transfer">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="671.0" layoutY="550.0" mnemonicParsing="false" onAction="#backClick" prefHeight="43.0" prefWidth="126.0" stylesheets="@Style.css" text="Back">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

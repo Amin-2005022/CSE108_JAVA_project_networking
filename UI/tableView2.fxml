@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.mainproject.TableViewController">
+   <children>
+      <Label fx:id="label3" alignment="CENTER" layoutX="61.0" layoutY="34.0" prefHeight="40.0" prefWidth="678.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" alignment="CENTER" layoutX="113.0" layoutY="81.0" prefHeight="40.0" prefWidth="574.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="667.0" layoutY="538.0" mnemonicParsing="false" onAction="#backClick" prefHeight="33.0" prefWidth="92.0" stylesheets="@Style.css" text="Back">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="40.0" layoutY="142.0" prefHeight="360.0" prefWidth="720.0" style="-fx-border-color: #000000; -fx-background-color: #C0C0C0;" styleClass="Table" stylesheets="@Style.css">
+         <columns>
+            <TableColumn fx:id="titlecolumn" prefWidth="161.60003662109375" text="Title" />
+            <TableColumn fx:id="yearofreleasecolumn" prefWidth="95.199951171875" text="Year of Release" />
+            <TableColumn fx:id="genrecolumn" prefWidth="204.0" text="Genre" />
+            <TableColumn fx:id="runningtimecolumn" prefWidth="92.79998779296875" text="Running Time" />
+            <TableColumn fx:id="budgetcolumn" prefWidth="77.5999755859375" text="Budget" />
+            <TableColumn fx:id="revenuecolumn" prefWidth="88.7999267578125" text="Revenue" />
+         </columns>
+      </TableView>
+      <Button layoutX="507.0" layoutY="538.0" mnemonicParsing="false" onAction="#detailsClick" prefHeight="14.0" prefWidth="148.0" stylesheets="@Style.css" text="Show Details">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

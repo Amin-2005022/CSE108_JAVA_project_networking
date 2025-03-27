@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.mainproject.Search">
+   <children>
+      <Label layoutX="95.0" layoutY="182.0" text="Search Movies By : " textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="titleid" layoutX="95.0" layoutY="245.0" mnemonicParsing="false" onAction="#titleClick" prefHeight="43.0" prefWidth="206.0" stylesheets="@Style.css" text="Title">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font></Button>
+      <Button fx:id="ryid" layoutX="95.0" layoutY="310.0" mnemonicParsing="false" onAction="#releaseYearClick" prefHeight="43.0" prefWidth="206.0" stylesheets="@Style.css" text="Release Year">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font></Button>
+      <Button fx:id="genreid" layoutX="95.0" layoutY="375.0" mnemonicParsing="false" onAction="#genreClick" prefHeight="46.0" prefWidth="206.0" stylesheets="@Style.css" text="Genre">
+         <font>
+            <Font name="Algerian" size="22.0" />
+         </font></Button>
+      <Button fx:id="revenueid" layoutX="432.0" layoutY="310.0" mnemonicParsing="false" onAction="#maxRevenueClick" prefHeight="43.0" prefWidth="238.0" stylesheets="@Style.css" text="Maximum Revenue">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font></Button>
+      <Button fx:id="recentmoviesid" layoutX="431.0" layoutY="245.0" mnemonicParsing="false" onAction="#mostRecentMoviesClick" prefHeight="43.0" prefWidth="238.0" stylesheets="@Style.css" text="Most Recent Movies">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font></Button>
+      <Button fx:id="toptenid" layoutX="432.0" layoutY="376.0" mnemonicParsing="false" onAction="#topTenClick" prefHeight="43.0" prefWidth="238.0" stylesheets="@Style.css" text="Top Ten Movies">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font></Button>
+      <Button fx:id="runtimeid" layoutX="95.0" layoutY="440.0" mnemonicParsing="false" onAction="#runTimeClick" prefHeight="43.0" prefWidth="206.0" stylesheets="@Style.css" text="Runtime">
+         <font>
+            <Font name="AmdtSymbols" size="20.0" />
+         </font></Button>
+      <Button fx:id="homepageid" layoutX="535.0" layoutY="524.0" mnemonicParsing="false" onAction="#homePageClick" stylesheets="@Style.css" text="Back to Homepage">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font></Button>
+      <Button fx:id="showallmovies" layoutX="432.0" layoutY="440.0" mnemonicParsing="false" onAction="#showAllMoviesClick" prefHeight="43.0" prefWidth="238.0" stylesheets="@Style.css" text="Show All Movies">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font></Button>
+      <Label fx:id="label1" alignment="CENTER" layoutX="145.0" layoutY="34.0" prefHeight="18.0" prefWidth="510.0" text="Label" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="42.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.1" fraction="0.85" topOpacity="0.34">
+               <input>
+                  <DropShadow>
+                     <input>
+                        <Bloom />
+                     </input>
+                  </DropShadow>
+               </input>
+            </Reflection>
+         </effect>
+      </Label>
+      <ImageView fitHeight="115.0" fitWidth="115.0" layoutX="45.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@searchpage.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
